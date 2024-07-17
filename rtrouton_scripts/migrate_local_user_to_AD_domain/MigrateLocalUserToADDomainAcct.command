@@ -74,7 +74,7 @@ until [ "$user" == "FINISHED" ]; do
 			# Verify NetID
 				printf "\e[1m$netIDprompt"
 				read netname
-				/usr/bin/id $lookupAccount
+				/usr/bin/id $netname
 				echo "Did the information displayed include a line similar to this: gid=1360859114 (DOMAIN\domain users)? It should be the second item listed."
 				select yn in "Yes" "No"; do
     					case $yn in
